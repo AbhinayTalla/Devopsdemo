@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie | Fresh Bites, Happy Life</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar container">
+            <a href="#" class="logo">Food<span>ie.</span></a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartButton">
+                    🛒 Cart <span id="cartCount">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content container">
+            <div class="hero-text">
+                <span class="tagline">🍃 Fresh & Delicious</span>
+                <h1>Good Food.<br>Good Mood.</h1>
+                <p>
+                    Experience the taste of happiness with freshly
+                    prepared meals made with love and quality ingredients.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn primary-btn">Explore Menu →</a>
+                    <a href="#about" class="btn secondary-btn">Learn More</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <h3>15+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div>
+                        <h3>50+</h3>
+                        <p>Master Chefs</p>
+                    </div>
+                    <div>
+                        <h3>10k+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories container">
+        <div class="section-heading">
+            <span>EXPLORE</span>
+            <h2>What are you craving?</h2>
+        </div>
+
+        <div class="category-list">
+            <button class="category active" data-category="All">🍽️ All</button>
+            <button class="category" data-category="Pizza">🍕 Pizza</button>
+            <button class="category" data-category="Burger">🍔 Burger</button>
+            <button class="category" data-category="Pasta">🍝 Pasta</button>
+            <button class="category" data-category="Indian">🍛 Indian</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section container" id="menu">
+        <div class="menu-heading">
+            <div class="section-heading">
+                <span>OUR MENU</span>
+                <h2>Popular Dishes</h2>
+                <p>Discover our most loved dishes, prepared just for you.</p>
+            </div>
+
+            <input type="text" id="searchInput"
+                placeholder="🔍 Search food...">
+        </div>
+
+        <div class="food-grid" id="foodGrid"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container about-content">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=900"
+                     alt="Freshly prepared food">
+            </div>
+
+            <div class="about-text">
+                <span class="section-label">ABOUT FOODIE</span>
+                <h2>We Serve Delicious Food With Passion</h2>
+                <p>
+                    At Foodie, we believe great food brings people together.
+                    Our chefs use fresh ingredients and creative recipes
+                    to deliver unforgettable experiences.
+                </p>
+                <p>
+                    Every meal is prepared with care, quality and a
+                    little extra love.
+                </p>
+                <a href="#menu" class="btn primary-btn">Discover Our Menu →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section container" id="contact">
+        <div class="section-heading">
+            <span>GET IN TOUCH</span>
+            <h2>Contact Us</h2>
+            <p>Have a question? We'd love to hear from you.</p>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Shopping Cart -->
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-panel">
+            <div class="cart-header">
+                <h2>Your Cart 🛒</h2>
+                <button id="closeCart">✕</button>
+            </div>
+
+            <div id="cartItems" class="cart-items">
+                <p class="empty-cart">Your cart is empty!</p>
+            </div>
+
+            <div class="cart-footer">
+                <h3>Total: ₹<span id="cartTotal">0</span></h3>
+                <button class="btn primary-btn checkout-btn" id="checkoutBtn">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <h2 class="logo">Food<span>ie.</span></h2>
+            <p>Fresh Bites, Happy Life ❤️</p>
+            <p>© 2026 Foodie. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
